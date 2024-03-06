@@ -25,11 +25,11 @@ from pydantic import BaseModel
 app = FastAPI()
 
 # Dentro del script
-df_EP1 = pq.read_table("PARQUET\TABLAS UNIDAS\DESARROLLADOR.parquet").to_pandas()
-df_EP2 = pq.read_table("PARQUET\TABLAS UNIDAS\GASTO.parquet").to_pandas()
-df_EP3 = pq.read_table("PARQUET\\TABLAS UNIDAS\\USUARIO_GENERO.parquet").to_pandas()
-df_EP4 = pq.read_table("PARQUET\TABLAS UNIDAS\TOP_DEV.parquet").to_pandas()
-df_EP5 = pq.read_table("PARQUET\TABLAS UNIDAS\SENT_DEV.parquet").to_pandas()
+df_EP1 = pq.read_table("TABLAS UNIDAS\DESARROLLADOR.parquet").to_pandas()
+df_EP2 = pq.read_table("TABLAS UNIDAS\GASTO.parquet").to_pandas()
+df_EP3 = pq.read_table("TABLAS UNIDAS\\USUARIO_GENERO.parquet").to_pandas()
+df_EP4 = pq.read_table("TABLAS UNIDAS\TOP_DEV.parquet").to_pandas()
+df_EP5 = pq.read_table("TABLAS UNIDAS\SENT_DEV.parquet").to_pandas()
 modelo_games = pq.read_table("PARQUET\TABLAS UNIDAS\MODELO_TRAIN.parquet").to_pandas()
 
 
